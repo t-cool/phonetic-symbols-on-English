@@ -9,7 +9,8 @@ This project was based on the [mphilli/English-to-IPA](https://github.com/mphill
 
 ![screencasts.gif](./screencasts.gif)
 
-It is available on the GitHub Page at https://t-cool.github.io/English-to-IPA/ .
+It is available on the GitHub Page at https://t-cool.github.io/phonetic-symbols-to-English-text
+Public .
 
 Please paste the sentences you want to add phonetic symbols to and press the convert button. You can also click on each word to have it read aloud.
 
