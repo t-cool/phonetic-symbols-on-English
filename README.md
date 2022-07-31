@@ -1,4 +1,4 @@
-# phonetic-symbols-to-English
+# phonetic-symbols-on-English
 
 This program puts phonetic symbols on your English text using the Pronouncing Dictionary published by Carnegie-Mellon University.
 
