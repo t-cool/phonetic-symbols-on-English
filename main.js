@@ -18,7 +18,15 @@ request.onload = function() {
   // auxiliary function
   function remove_punc(words){
     let words_preserved = [];
-    words = words.split(" ");
+    // Line break handling
+    words = words.split('\n\n\n');
+    words = words.join(' ');
+    words = words.split('\n\n');
+    words = words.join(' ');
+    words = words.split('\n');
+    words = words.join(' ');
+    words = words.split(' ');
+    console.log(words);
     for (w of words) {
       lowerWord = w.toLowerCase();
       let punct_str = lowerWord.replace(/\!|\(|\)|\"|\#|\$|\%|\&|\\|\'|\(|\)|\*|\+|\,|\-|\.|\/|\:|\;|\<|\=|\>|\/|\?|\@|\[|\\|\\|\]|\^|\_|\`|\{|\||\}|\~|\«|\»|\ /g, '');
