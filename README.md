@@ -1,8 +1,8 @@
 # phonetic-symbols-to-English
 
-This program converts English text into the International Phonetic Alphabet (IPA) using the Pronouncing Dictionary published by Carnegie-Mellon University.
+This program puts phonetic symbols on your English text using the Pronouncing Dictionary published by Carnegie-Mellon University.
 
-This project was based on the [mphilli/English-to-IPA](https://github.com/mphilli/English-to-IPA) project.
+This project was based on the [mphilli/English-to-IPA](https://github.com/mphilli/English-to-IPA).
 
 
 ## Usage
