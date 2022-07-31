@@ -11,11 +11,9 @@ voice.forceLanguage('en');
 voice.setRate(1);
 
 request.onload = function() {
-  // DB
   let asset = JSON.parse(request.response);
   asset = asset[0];
 
-  // auxiliary function
   function remove_punc(words){
     let words_preserved = [];
     // Line break handling
@@ -26,7 +24,7 @@ request.onload = function() {
     words = words.split('\n');
     words = words.join(' ');
     words = words.split(' ');
-    console.log(words);
+
     for (w of words) {
       lowerWord = w.toLowerCase();
       let punct_str = lowerWord.replace(/\!|\(|\)|\"|\#|\$|\%|\&|\\|\'|\(|\)|\*|\+|\,|\-|\.|\/|\:|\;|\<|\=|\>|\/|\?|\@|\[|\\|\\|\]|\^|\_|\`|\{|\||\}|\~|\«|\»|\ /g, '');
@@ -36,16 +34,14 @@ request.onload = function() {
   }
 
   function get_cmu(words_array){
-  let result = words_array.map(wordArray => {
-      wordArray[1] = asset[wordArray[1]];
-      if(wordArray[1]==undefined){
-        wordArray[1] = [`*${wordArray[0]}*`];
-      }
-
-      return wordArray
-    })
-
-  return result;
+    let result = words_array.map(wordArray => {
+        wordArray[1] = asset[wordArray[1]];
+        if(wordArray[1]==undefined){
+          wordArray[1] = [`"${wordArray[0]}"`];
+        }
+        return wordArray
+        })
+    return result;
   }
 
   function convert(words_in){
