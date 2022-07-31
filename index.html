@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Design by foolishdeveloper.com -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>English to IPA</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Kanit&display=swap");
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(5,75,130);
+      font-family: "Kanit", Verdana, Arial, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    #containerA {
+      width: 700px;
+      padding: 40px 20px;
+      background: white;
+
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #containerB {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .item{
+        margin: 5px;
+    }
+    h1 {
+      color: #0773d7;
+      font-size: 30px;
+      width: 100%;
+      margin-top: -15px;
+      margin-bottom: 30px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    #text {
+      display: block;
+      width: 100%;
+      background-color: transparent;
+      color: #021652;
+      border: 2px solid #3ba9f4;
+      border-radius: 2px;
+      resize: none;
+      margin-bottom: 35px;
+      height: 200px;
+      padding: 10px;
+      font-size: 20px;
+    }
+    #filename {
+      width: calc(100% - 200px);
+      border: 2px solid #3ba9f4;
+      border-radius: 2px;
+      background-color: transparent;
+      color: #052a53;
+      padding: 0 10px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      margin-right: 20px;
+    }
+    #download {
+      background-color: #3ba9f4;
+      color: #fff;
+      font-size: 20px;
+      height: 50px;
+      border: none;
+      border-radius: 2px;
+      width: 174px;
+      cursor: pointer;
+    }
+    select {
+        /*プルダウンの矢印を消す */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+    }
+    #containerB{
+      display: flex;
+
+
+    }
+    </style>
+  </style>
+</head>
+<body>
+  <div id="containerA">
+    <h1 id="caption">attach phonetic symbols to English sentences</h1>
+    <textarea placeholder="" id="text"></textarea>
+    <button id="convert">Convert</button>
+    <div id="containerB"></div>
+  </div>
+<script src="./talkify.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
