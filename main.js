@@ -1,5 +1,5 @@
 // Fetching resources
-const requestURL = "https://t-cool.github.io/English-to-IPA/dict.json";
+const requestURL = "https://t-cool.github.io/phonetic-symbols-to-English-text/dict.json";
 const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'text';
